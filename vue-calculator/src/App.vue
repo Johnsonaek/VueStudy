@@ -1,23 +1,27 @@
 <template>
   <div id="app">
-    <Calculator />
+    <!--<Calculator />-->
+    <quicksort>
+
+    </quicksort>
   </div>
 </template>
 
 <script>
 import Calculator from './components/calculator'
-
+import quicksort from './components/quicksort'
 export default {
   name: 'app',
   components: {
-    Calculator
+    Calculator,
+    quicksort
   }
 }
 </script>
 
 <style>
   body {
-    background: linear-gradient(to right, #85D8CE, #085078); 
+/*    background: linear-gradient(to right, #85D8CE, #085078);*/
   }
 
   #app {

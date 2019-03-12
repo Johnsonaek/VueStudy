@@ -1,8 +1,8 @@
 <template>
   <div class="filters">
-    
+
     <div class="filter">
-      <label for="basic-dropdown">Basic dropdown: </label>
+      <label for="basic-dropdown">一级菜单：</label>
       <select name="basic-dropdown" v-model="selectedFruit">
         <option>Apple</option>
         <option>Banana</option>
@@ -13,15 +13,15 @@
       </select>
     </div>
     <div class="filter">
-      <label for="component-dropdown">Component-base dropdown: </label>
+      <label for="component-dropdown">二级菜单：</label>
       <dropdown id="component-dropdown" :options="fruitOptions" v-model="selectedFruit"></dropdown>
     </div>
 
     <div class="filter">
       <label for="autocomplete-dropdown">Autocomplete dropdown: </label>
-      <autocomplete-dropdown 
-        id="autocomplete-dropdown" 
-        :options="fruitOptions" 
+      <autocomplete-dropdown
+        id="autocomplete-dropdown"
+        :options="fruitOptions"
         v-model="selectedFruit"
         placeholder="Enter a fruit name"
       ></autocomplete-dropdown>

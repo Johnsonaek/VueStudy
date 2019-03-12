@@ -59,7 +59,7 @@ export default {
       let totalArray = this.tests.reduce((acc, test) => {
         return acc + parseInt(test.score)
       }, 0)
-      
+
       return parseFloat(totalArray / this.tests.length).toFixed(2)
     }
   },
@@ -70,7 +70,7 @@ export default {
         score: this.newTest.score
       })
       this.newTest.studentName = 'Jack'
-      this.newTest.score = 0      
+      this.newTest.score = 0
     },
     autoSave: function() {
       // 假设我们正在调用我们的后端来保存数据

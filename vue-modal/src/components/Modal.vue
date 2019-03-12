@@ -8,7 +8,7 @@
             <button type="button" class="btn-close" @click="close" aria-label="Close modal">x</button>
           </slot>
         </div>
-        
+
         <div class="modal-body" id="modalDescription">
           <slot name="body">
             这是Modal弹框的主体
@@ -32,7 +32,7 @@ export default {
   props: ['show'],
   data () {
     return {
-      
+
     }
   },
   methods: {
@@ -70,7 +70,7 @@ export default {
   box-shadow: 2px 2px 20px 1px;
   overflow-x:auto;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 .modal-header,
 .modal-footer {
@@ -91,13 +91,14 @@ export default {
   padding: 20px 10px;
 }
 .btn-close {
+
   border: none 0;
   font-size: 20px;
   padding: 20px;
   cursor: pointer;
   font-weight: bold;
-  color: #4aae9b;
-  background-color: transparent;
+  color: #ff0;
+  background-color: #ff0;
 }
 .btn-green {
   color: #fff;

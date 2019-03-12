@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="container">
+    <!--<div class="container">
             <div class="block">
                 <vue-button btn-text="Primary" btn-type="primary"></vue-button>
                 <vue-button btn-text="Secondary" btn-type="secondary"></vue-button>
@@ -37,17 +37,21 @@
             <div class="block">
                 <vue-button btn-text="Primary" btn-type="primary" btn-size="lg" btn-active="true"></vue-button>
             </div>
-        </div>
+        </div>-->
+    <animation></animation>
+
   </div>
 </template>
 
 <script>
 import vueButton from "./components/Button";
+import animation from "./components/animation";
 
 export default {
   name: "App",
   components: {
-    vueButton
+    vueButton,
+    animation
   }
 };
 </script>
